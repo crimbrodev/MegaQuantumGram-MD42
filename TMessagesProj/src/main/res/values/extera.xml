@@ -12,8 +12,8 @@
 -->
 
 <resources>
-    <string name="exteraAppName" translatable="false">exteraGram</string>
-    <string name="Preferences">exteraGram Preferences</string>
+    <string name="exteraAppName" translatable="false">MegaQuantumGram MD42</string>
+    <string name="Preferences">MegaQuantumGram MD42 (120 FPS)</string>
 
     <!-- Main Menu -->
     <string name="Links">Links</string>
