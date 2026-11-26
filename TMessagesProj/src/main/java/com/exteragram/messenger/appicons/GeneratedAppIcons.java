@@ -12,7 +12,7 @@
 
 */
 
-package com.megaquantum.md42.appicons;
+package com.exteragram.messenger.appicons;
 
 import org.telegram.messenger.R;
 
