@@ -59,8 +59,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          printf "github.token=%s
-" "$GITHUB_TOKEN" >> local.properties
+          printf "github.token=%s\n" "$GITHUB_TOKEN" >> local.properties
           chmod +x gradlew
           python3.11 --version
           ./gradlew :TMessagesProj:assembleFullArm64Debug --stacktrace --no-daemon
