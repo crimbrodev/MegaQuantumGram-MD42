@@ -12,15 +12,15 @@
 -->
 
 <resources>
-    <string name="exteraAppName" translatable="false">exteraGram</string>
-    <string name="Preferences">Настройки exteraGram</string>
+    <string name="exteraAppName" translatable="false">MegaQuantumGram MD42</string>
+    <string name="Preferences">MegaQuantumGram MD42 (120 FPS ✅)</string>
 
     <!-- Главное меню -->
     <string name="Links">Ссылки</string>
     <string name="Crowdin">Перевод</string>
     <string name="Website">Веб-сайт</string>
-    <string name="SourceCode">Исходный код</string>
-    <string name="Categories">Категории</string>
+    <string name="SourceCode">Квантовые сурсы (DeepSeek)</string>
+    <string name="Categories">Модули разгона 120 FPS ✅</string>
     <string name="Developer">**%1$s** является членом команды разработчиков **exteraGram**.</string>
     <string name="DeveloperCompact">Участник команды разработчиков **exteraGram**.</string>
     <string name="Supporter">**%1$s** поддержал(а) разработку **exteraGram** и получил(а) уникальный значок.</string>

@@ -55,7 +55,12 @@ jobs:
           keytool -genkeypair -v -keystore TMessagesProj/config/exteraGram.jks -alias slopalias -keyalg RSA -keysize 2048 -validity 10000 -storepass sloppassword -keypass sloppassword -dname "CN=MegaQuantumGram, OU=MD42, O=SlopGram, L=Net, ST=Web, C=RU"
 
       - name: Build Full Arm64 APK
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          printf "github.token=%s
+" "$GITHUB_TOKEN" >> local.properties
           chmod +x gradlew
           python3.11 --version
           ./gradlew :TMessagesProj:assembleFullArm64Debug --stacktrace --no-daemon

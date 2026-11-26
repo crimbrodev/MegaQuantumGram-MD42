@@ -230,22 +230,22 @@ fun setProxyDisabledOn(condition: ProxyDisableCondition, disable: Boolean) {
     doNotUseProxy = if (disable) doNotUseProxy or condition.flag else doNotUseProxy and condition.flag.inv()
 }
 
-var customSavePath by StringPref("exteraGram")
+var customSavePath by StringPref("MegaQuantumGram")
 
 var doNotMarkAsNew = ArrayList<String>()
 var newFeaturesShowedAt = HashMap<String, Long>()
 
 // Icon Packs
-var iconPack by EnumPref(IconPackType.DEFAULT)
+var iconPack by EnumPref(IconPackType.SOLAR)
 var editingIconPackId by NullableStringPref(null)
 
 // Appearance
 var avatarCorners by FloatPref(28.0f)
 var singleCornerRadius by BooleanPref(false)
-var dividerStyle by EnumPref(DividerStyle.LINE)
-var forceSnow by BooleanPref(false)
+var dividerStyle by EnumPref(DividerStyle.SEGMENTS)
+var forceSnow by BooleanPref(true)
 var hideActionBarStatus by BooleanPref(false)
-var centerTitle by BooleanPref(false)
+var centerTitle by BooleanPref(true)
 var hideStories by BooleanPref(false)
 var hideFloatingButton by BooleanPref(false)
 var hideDialogsSearchBar by BooleanPref(false)
@@ -266,11 +266,11 @@ var sectionsSeparatedHeaders: Boolean
 var newLoadingStyle by BooleanPref(true)
 var newSliderStyle by BooleanPref(true)
 var newSwitchStyle by BooleanPref(true)
-var newChatHeaderStyle by BooleanPref(false)
-var newNavigationBarStyle by BooleanPref(false)
-var newFabStyle by BooleanPref(false)
-var newProfileActionsStyle by BooleanPref(false)
-var newPlayerStyle by BooleanPref(false)
+var newChatHeaderStyle by BooleanPref(true)
+var newNavigationBarStyle by BooleanPref(true)
+var newFabStyle by BooleanPref(true)
+var newProfileActionsStyle by BooleanPref(true)
+var newPlayerStyle by BooleanPref(true)
 var playerCoverColors by BooleanPref(false)
 var playerMiniCoverColors by BooleanPref(false)
 var lyricsOnline by BooleanPref(false)
@@ -281,7 +281,7 @@ var playerMotionCovers by BooleanPref(false)
 var playerSpotifyCanvas by BooleanPref(false)
 var playerYandexCanvas by BooleanPref(false)
 var playerRhythmBackground by BooleanPref(true)
-var playerParticles by BooleanPref(false)
+var playerParticles by BooleanPref(true)
 var playerSpeedPitch by BooleanPref(false)
 var playerMode by IntegerPref(0)
 
